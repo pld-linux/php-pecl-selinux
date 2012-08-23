@@ -4,7 +4,7 @@ Summary:	SELinux binding for PHP script language
 Summary(pl.UTF-8):	Dowiązania PHP do SELinuksa
 Name:		php-pecl-%{_modname}
 Version:	0.3.1
-Release:	4
+Release:	5
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
@@ -14,7 +14,7 @@ BuildRequires:	libselinux-devel >= 2.0.80
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
-Requires:	php-common >= 4:5.0.4
+Requires:	php(core) >= 5.0.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
